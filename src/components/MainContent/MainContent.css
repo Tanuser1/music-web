@@ -1,0 +1,7 @@
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #121212;
+  color: white;
+  overflow-y: auto; /* Cho phép cuộn khi nội dung dài */
+}

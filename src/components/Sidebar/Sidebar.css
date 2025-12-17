@@ -1,0 +1,68 @@
+.sidebar {
+  width: 240px;
+  background-color: #000000;
+  height: 100%;
+  color: white;
+  padding: 20px;
+}.sidebar {
+    width: 240px;
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #b3b3b3;
+}
+
+.logo-container {
+    margin-bottom: 25px;
+}
+
+.logo-text {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+}
+
+.navigation ul,
+.playlist-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li,
+.playlist-section li {
+    padding: 8px 0;
+}
+
+.navigation a,
+.playlist-section a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 5px 0;
+}
+
+.navigation a:hover,
+.playlist-section a:hover {
+    color: white;
+}
+
+/* Kiểu cho NavLink khi nó đang active */
+.navigation a.active {
+    color: white;
+    background-color: #282828;
+    border-radius: 4px;
+    padding-left: 10px; /* Thêm chút padding để đẹp hơn */
+}
+
+.playlist-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #282828;
+}

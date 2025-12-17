@@ -1,0 +1,110 @@
+.player-controls-container {
+    height: 90px;
+    background-color: #181818;
+    border-top: 1px solid #282828;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+}
+
+/* --- Cột Trái: Thông tin bài hát --- */
+.song-info {
+    display: flex;
+    align-items: center;
+}
+.song-thumbnail-placeholder {
+    width: 56px;
+    height: 56px;
+    background-color: #333;
+    margin-right: 14px;
+}
+.song-details .song-title {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+}
+.song-details .song-artist {
+    font-size: 12px;
+    color: #b3b3b3;
+    margin: 0;
+}
+
+/* --- Cột Giữa: Điều khiển chính --- */
+.main-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.control-buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.ctrl-btn {
+    background: none;
+    border: none;
+    color: #b3b3b3;
+    font-size: 18px;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.ctrl-btn:hover {
+    color: #fff;
+}
+.play-pause-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    line-height: 34px;
+}
+.play-pause-btn:hover {
+    transform: scale(1.05);
+    color: #000;
+}
+
+.progress-bar-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.time-stamp {
+    font-size: 11px;
+    min-width: 40px;
+    text-align: center;
+}
+.progress-bar-background {
+    height: 4px;
+    background-color: #535353;
+    border-radius: 2px;
+    margin: 0 10px;
+    flex-grow: 1;
+}
+.progress-bar-foreground {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+/* --- Cột Phải: Điều khiển phụ --- */
+.side-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.volume-bar-background {
+    width: 100px;
+    height: 4px;
+    background-color: #535353;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+.volume-bar-foreground {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+}

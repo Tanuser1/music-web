@@ -1,0 +1,57 @@
+.header {
+    height: 60px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3); /* Nền hơi trong suốt để thấy content phía sau khi cuộn */
+    position: sticky; /* Giúp header dính ở trên cùng khi cuộn */
+    top: 0;
+    z-index: 10;
+}
+
+.navigation-controls .nav-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    line-height: 32px; /* Căn giữa dấu < > */
+    text-align: center;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+.navigation-controls .nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.user-controls .signup-btn,
+.user-controls .login-btn {
+    background: none;
+    border: none;
+    color: #a7a7a7;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+.user-controls .signup-btn:hover {
+    color: #fff;
+    transform: scale(1.04);
+}
+
+.user-controls .login-btn {
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    padding: 8px 24px;
+}
+
+.user-controls .login-btn:hover {
+    transform: scale(1.04);
+}
